@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>ping bank</title>
+</head>
+<style>
+span{color:gray;font-size:0.7em;}
+</style>
+<body style="background-color:#F8ECE0">
+<span th:text="|총 회원 : ${count}명|"></span>
+<div align="center">
+<h1>Ping Bank</h1>
+<form method="get" action="/login/check">
+ID : <input type="text" name="id"><p>
+<input type="submit" value="login"> &nbsp; &nbsp;
+<a href="/member/register">회원가입</a> &nbsp; &nbsp;
+<a href="/qa/question">질문답변</a><p>
+</form>
+<img src="ping.jpg" width="280" height="330" alt="핑구핑가"><br>
+<span>핑구</span>
+</div>
+</body>
+</html>
